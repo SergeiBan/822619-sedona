@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Банщиков](https://up.htmlacademy.ru/htmlcss/22/user/822619).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
