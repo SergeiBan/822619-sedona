@@ -21,19 +21,25 @@
     <main class="container">
         <!--Здесь будет форма выбора отелей-->
       <section class="results">
-        <h2 class="visually-hidden">Результаты поиска:</h2>
-        <span>Найдено: 3</span>
-        <span>Сортировка:</span>
-        <a class="results__sort">По цене</a>
-        <a class="results__sort">По типу</a>
-        <a class="results__sort">По рейтингу</a>
-        <a class="results__sort-order" href="#"><img src="http://placehold.it/15x10" alt="Сортировать по возрастанию"></a>
-        <a class="results__sort-order" href="#"><img src="http://placehold.it/15x10" alt="Сортировать по убыванию"></a>
+        <!-- <h2 class="visually-hidden">Результаты поиска:</h2> Этот заголовок не нужен?-->
+        <p class="results__count">Найдено: <span>3</span></p>
+        <div class="results__type">
+          <p class="results__type-name"><span>Сортировка:</span></p>
+          <ul class="results__type-list">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </div>
+        <ul class="results-direction">
+          <li><a href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
+        </ul>
       </section>
         
-      <section class="table">
+      <section class="hotels">
         <h2 class="visually-hidden">Результаты поиска отелей</h2>
-        <div class="table__result"> <!--Первый ряд-->
+        <article class="hotels__item hotel"> <!--Первый ряд-->
 
           <div class="table__result-image"><a href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a></div>
           <div class="table__result-description"> <!--Блок с тремя подблоками-->
@@ -54,7 +60,7 @@
             <div class="table__result-evaluate-rating">Рейтинг: 8,5</div>
           </div>
 
-        </div>
+        </article>
 
         <div class="table__result"> <!--Второй ряд-->
 

@@ -28,10 +28,10 @@
       </div>
 
       <section class="features">
-        <p class="features__intro">
-          <span class="features__attention">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
-          <span class="features__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
-        </p>
+        <div class="features__intro">
+          <p class="features__attention">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="features__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
 
         <ol class="features__list">
           <li class="features__item  features__item-wide">
@@ -43,19 +43,19 @@
               <figure class="features__item-picture"><img src="http://placehold.it/150x100" alt="Настоящий городок"></figure>
               <ul class="recommendations">
                 <li class="recommendations__item"> 
-                  <div class="recommendations__item-about">
+                  <div class="recommendations__about">
                     <h3 class="features__item-header">Жильё</h3>
                     <p class="features__item-details">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
                 </li>
                 <li class="recommendations__item">
-                  <div class="recommendations__item-about">
+                  <div class="recommendations__about">
                     <h3 class="features__item-header">Еда</h3>
                     <p class="features__item-details">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </div>
                 </li>
                 <li class="recommendations__item">
-                  <div class="recommendations__item-about">
+                  <div class="recommendations__about">
                     <h3 class="features__item-header">Сувениры</h3>
                     <p class="features__item-details">Не только китайского, но и местного производства!</p>
                   </div>
@@ -98,7 +98,7 @@
         <h2 class="visually-hidden">Лучшие предложения гостиниц!</h2>
         <p class="search-offer__interest">Заинтересовались?</p>
         <p class="search-offer__question">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <input class="btn search-btn" type="submit" id="hotel-search" name="hotel-search-field" value="Поиск гостиницы в Седоне">
+        <button class="btn search-btn" type="submit" id="hotel-search" name="hotel-search-field">Поиск гостиницы в Седоне</button>
         <!--Здесь будет форма поиска гостиницы и карта-->
       </section>
     </main>
@@ -111,13 +111,11 @@
         <li class="social__button">Twitter</li>
         <li class="social__button">Facebook</li>
         <li class="social__button">YouTube</li>
-        </ul>
-      <div class="copyright">
-        <p>
-          <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
-        </p>
-      </div>
+      </ul>
+      <p class="copyright">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+      </p>
     </footer>
   </body>
 </html>
