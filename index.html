@@ -8,89 +8,100 @@
 
     <header class="header">
       <nav class="main-nav">
-        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!">
+        <a class="main-nav__logo" href="index.html"><img src="http://placehold.it/150x100" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
         <ul>
-          <li class="main-nav__item">Информация</li>
-          <li class="main-nav__item">Фото и видео</li>
-          <li class="main-nav__item">Карта штата</li>
-          <li class="main-nav__item">Гостиницы</li>
+          <li><a class="main-nav__item" href="#">Информация</a></li>
+          <li><a class="main-nav__item" href="#">Фото и видео</a></li>
+          <li><a class="main-nav__item" href="#">Карта штата</a></li>
+          <li><a class="main-nav__item" href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <img class="top-picture" src="http://placehold.it/150x100" alt="Welcome to the gorgeous Sedona">
-      <img class="mask-picture" src="http://placehold.it/150x100" alt="">
     </header>
 
     <main class="container">
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <div class="mountain-view">
+        <img class="top-picture" src="http://placehold.it/150x100" alt="Вид на горы у Седоны">
+        <img class="mask-picture" src="http://placehold.it/150x100" alt="">
+        <p class="mountain-view__welcome">
+          <span>Welcome</span>
+          <span>- to the gorgeous -</span>
+          <span>Sedona</span>
+          <span>"Because the Grand Canyon sucks!"</span>
+        </p>
+      </div>
 
       <section class="features">
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+        <p class="features__intro">
+          <span class="features__attention">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
+          <span class="features__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
+        </p>
 
-          <ol>
-            <li class="features__item">
-              <div class="features__item__about">
-                <h3>Настоящий городок</h3>
-                <span class="number">- №1 -</span>
-                <span class="details">Седона - не атттракцион для туристов, там течёт своя жизнь</span>
-              </div>
-                <img class="features-picture" src="http://placehold.it/150x100" alt="Настоящий городок">
-                <ul class="recommendations">
-                  <li class="recommendations-item"> 
-                    <div class="recommendations-item__about">
-                      <h3>Жильё</h3>
-                      <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
-                    </div>
-                  </li>
-                  <li class="recommendations-item">
-                    <div class="recommendations-item__about">
-                      <h3>Еда</h3>
-                      <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
-                    </div>
-                  </li>
-                  <li class="recommendations-item">
-                    <div class="recommendations-item__about">
-                      <h3>Сувениры</h3>
-                      <span>Не только китайского, но и местного производства!</span>
-                    </div>
-                  </li>
-                </ul>
-            </li>
-            <li class="features__item">
-              <div class="features__item__about">
-                <h3>Там есть мост дьявола</h3>
-                <span class="number">- №2 -</span>
-                <span class="details">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
-              </div>
-              <img class="features-picture" src="http://placehold.it/150x100" alt="Там есть мост дьявола">
-           </li>
-           <li class="features__item">
-             <div class="features__item__about">
-              <h3>Небольшая площадь</h3>
-              <span class="number">- №3 -</span>
-              <span class="details">Все достопримечательности находятся очень близко</span>
+        <ol class="features__list">
+          <li class="features__item">
+            <div class="features__item-about">
+              <h3 class="features__item-header">Настоящий городок</h3>
+              <p class="features__item-number">- №1 -</p>
+              <p class="features__item-details">Седона - не атттракцион для туристов, там течёт своя жизнь</p>
             </div>
-           </li>
-            <li class="features__item">
-              <div class="features__item__about">
-                <h3>Красивая дорога</h3>
-                <span class="number">- №4 -</span>
-                <span class="details">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
-              </div>
-            </li>
-            <li class="features__item">
-              <div class="features__item__about">
-                <h3>Мало туристов</h3>
-                <span class="number">- №5 -</span>
-                <span class="details">Большинство едет в Гранд Каньон и толпится там</span>
-              </div>
-            </li>   
-          </ol>
+              <figure><img class="features__item-picture" src="http://placehold.it/150x100" alt="Настоящий городок"></figure>
+              <ul class="recommendations">
+                <li class="recommendations__item"> 
+                  <div class="recommendations__item-about">
+                    <h3 class="features__item-header">Жильё</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+                <li class="recommendations__item">
+                  <div class="recommendations__item-about">
+                    <h3 class="features__item-header">Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="recommendations__item">
+                  <div class="recommendations__item-about">
+                    <h3 class="features__item-header">Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+          </li>
+          <li class="features__item">
+            <div class="features__item-about">
+              <h3 class="features__item-header">Там есть мост дьявола</h3>
+              <p class="features__item-number">- №2 -</p>
+              <p class="features__item-details">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <figure><img class="features-picture" src="http://placehold.it/150x100" alt="Там есть мост дьявола"></figure>
+          </li>
+          <li class="features__item">
+            <div class="features__item-about">
+            <h3 class="features__item-header">Небольшая площадь</h3>
+            <p class="features__item-number">- №3 -</p>
+            <p class="features__item-details">Все достопримечательности находятся очень близко</p>
+          </div>
+          </li>
+          <li class="features__item">
+            <div class="features__item-about">
+              <h3 class="features__item-header">Красивая дорога</h3>
+              <p class="features__item-number">- №4 -</p>
+              <p class="features__item-details">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features__item-about">
+              <h3 class="features__item-header">Мало туристов</h3>
+              <p class="features__item-number">- №5 -</p>
+              <p class="features__item-details">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>   
+        </ol>
       </section>
 
       <section class="search-offer">
         <h2 class="visually-hidden">Лучшие предложения гостиниц!</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-offer__interest">Заинтересовались?</p>
+        <p class="search-offer__question">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <input class="btn search-btn" type="submit" id="hotel-search" name="hotel-search-field" value="Поиск гостиницы в Седоне">
         <!--Здесь будет форма поиска гостиницы и карта-->
       </section>
     </main>
@@ -99,13 +110,11 @@
       <div class="visit">
         <a class="visit__link" href="#">#Visitsedona</a>
       </div>>
-      <div class="social">
-        <ul>
-          <li class="social__button">Twitter</li>
-          <li class="social__button">Facebook</li>
-          <li class="social__button">YouTube</li>
+      <ul class="social">
+        <li class="social__button">Twitter</li>
+        <li class="social__button">Facebook</li>
+        <li class="social__button">YouTube</li>
         </ul>
-      </div>>
       <div class="copyright">
         <p>
           <span>Website by</span>
