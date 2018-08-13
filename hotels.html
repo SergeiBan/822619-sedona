@@ -21,7 +21,7 @@
     <main class="container">
         <!--Здесь будет форма выбора отелей-->
       <section class="results">
-        <!-- <h2 class="visually-hidden">Результаты поиска:</h2> Этот заголовок не нужен?-->
+        <h2 class="visually-hidden">Результаты поиска:</h2>
         <p class="results__count">Найдено: <span>3</span></p>
         <div class="results__type">
           <p class="results__type-name"><span>Сортировка:</span></p>
@@ -41,72 +41,66 @@
         <h2 class="visually-hidden">Результаты поиска отелей</h2>
         <article class="hotels__item hotel"> <!--Первый ряд-->
 
-          <div class="table__result-image"><a href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a></div>
-          <div class="table__result-description"> <!--Блок с тремя подблоками-->
-            <div class="table__result-description-name"><a href="#">Amara resort &amp; spa</a></div>
-            <div class="table__result-description-hotel">
-              <div class="table__result-description-hotel-type">Гостинца</div>
-              <div class="table__result-description-hotel-price">От 4000 Р.</div>
+          <a class="hotel__image" href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a>
+          <div class="hotel__description"> <!--Блок с тремя подблоками-->
+            <div class="hotel__name"><a href="#">Amara resort &amp; spa</a></div>
+            <div class="hotel__info">
+              <div class="hotel__type">Гостинца</div>
+              <div class="hotel__price">От 4000 Р.</div>
             </div>            
-            <div class="table__result-description-actions">
-              <a class="result-btn btn-details" href="#">Подробнее</a>
-              <a class="result-btn btn-reserve" href="#">Забронировать</a>
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="table__result-evaluate"> <!--Блок с двумя подблоками-->
-            <div class="table__result-evaluate-stars">
-              <img src="http://placehold.it/150x10" alt="Количество звезд">
-            </div>
-            <div class="table__result-evaluate-rating">Рейтинг: 8,5</div>
+          <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
+            <p class="hotel__stars"><span class="visually-hidden">4 звезды</span></p>
+            <p class="hote__rating">Рейтинг: <span>8,5</span></p>
           </div>
 
         </article>
 
-        <div class="table__result"> <!--Второй ряд-->
+        <article class="hotels__item hotel"> <!--Первый ряд-->
 
-          <div class="table__result-image"><a href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a></div>
-          <div class="table__result-description"> <!--Блок с тремя подблоками-->
-            <div class="table__result-description-name"><a href="#">Desert Quail Inn</a></div>
-            <div class="table__result-description-hotel">
-              <div class="table__result-description-hotel-type">Мотель</div>
-              <div class="table__result-description-hotel-price">От 3000 Р.</div>
-            </div>
-            <div class="table__result-description-actions">
-              <a class="result-btn btn-details" href="#">Подробнее</a>
-              <a class="result-btn btn-reserve" href="#">Забронировать</a>
-            </div>
-          </div>
-          <div class="table__result-evaluate"> <!--Блок с двумя подблоками-->
-            <div class="table__result-evaluate-stars">
-              <img src="http://placehold.it/150x10" alt="Количество звезд">
-            </div>
-            <div class="table__result-evaluate-rating">Рейтинг: 8,9</div>
-          </div>
-
-        </div>
-
-        <div class="table__result"> <!--Третий ряд-->
-
-          <div class="table__result-image"><a href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a></div>
-          <div class="table__result-description"> <!--Блок с тремя подблоками-->
-            <div class="table__result-description-name"><a href="#">Villas at Poco Diablo</a></div>
-            <div class="table__result-description-hotel">
-              <div class="table__result-description-hotel-type">Апартаменты</div>
-              <div class="table__result-description-hotel-price">От 2000 Р.</div>
-            </div>
-            <div class="table__result-description-actions">
-              <a class="result-btn btn-details" href="#">Подробнее</a>
-              <a class="result-btn btn-reserve" href="#">Забронировать</a>
+          <a class="hotel__image" href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a>
+          <div class="hotel__description"> <!--Блок с тремя подблоками-->
+            <div class="hotel__name"><a href="#">Desert Quail Inn</a></div>
+            <div class="hotel__info">
+              <div class="hotel__type">Мотель</div>
+              <div class="hotel__price">От 3000 Р.</div>
+            </div>            
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="table__result-evaluate"> <!--Блок с двумя подблоками-->
-              <div class="table__result-evaluate-stars">
-                <img src="http://placehold.it/150x10" alt="Количество звезд">
-              </div>
-              <div class="table__result-evaluate-rating">Рейтинг: 9,2</div>
+          <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
+            <p class="hotel__stars"><span class="visually-hidden">3 звезды</span></p>
+            <p class="hote__rating">Рейтинг: <span>8,9</span></p>
           </div>
 
-        </div>
+        </article>
+
+        <article class="hotels__item hotel"> <!--Первый ряд-->
+
+          <a class="hotel__image" href="#"><img src="http://placehold.it/150x100" alt="Фото отеля"></a>
+          <div class="hotel__description"> <!--Блок с тремя подблоками-->
+            <div class="hotel__name"><a href="#">Villas at Poco Diablo</a></div>
+            <div class="hotel__info">
+              <div class="hotel__type">Апартаменты</div>
+              <div class="hotel__price">От 2000 Р.</div>
+            </div>            
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
+            <p class="hotel__stars"><span class="visually-hidden">2 звезды</span></p>
+            <p class="hote__rating">Рейтинг: <span>9,2</span></p>
+          </div>
+
+        </article>
       </section>
     </main>
 
