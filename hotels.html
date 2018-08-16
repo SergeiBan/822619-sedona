@@ -8,18 +8,42 @@
 
     <header class="header">
       <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
+          <a class="main-nav__logo" href="index.html" aria-label="Логотип Седоны"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
         <ul>
-          <li><a class="main-nav__item" href="#">Информация</a></li>
-          <li><a class="main-nav__item" href="#">Фото и видео</a></li>
-          <li><a class="main-nav__item" href="#">Карта штата</a></li>
+          <li><a class="main-nav__item">Информация</a></li>
+          <li><a class="main-nav__item">Фото и видео</a></li>
+          <li><a class="main-nav__item">Карта штата</a></li>
           <li><a class="main-nav__item">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="container">
-        <!--Здесь будет форма выбора отелей-->
+      <form action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value">
+        <h2 class="visually-hidden">Форма выбора параметров отеля</h2>
+        <fieldset class="infrastructure">
+          <p>Инфраструктура</p>
+          <ul class="infrastructure__list">
+            <li><label><input type="checkbox" id="pool" name="pool-field">Бассейн</label></li>
+            <li><label><input type="checkbox" id="parking" name="parking-field">Парковка</label></li>
+            <li><label><input type="checkbox" id="wi-fi" name="wi-fi-field">Wi-Fi</label></li>
+          </ul>
+        </fieldset>
+        <fieldset class="housing-type">
+          <legend>Тип жилья</legend>
+          <ul class="housing-type__list">
+            <li><label><input type="checkbox" id="inn" name="inn-field">Гостиница</label></li>
+            <li><label><input type="checkbox" id="motel" name="motel-field">Мотель</label></li>
+            <li><label><input type="checkbox" id="apartments" name="apartments-field">Апартаменты</label></li>
+          </ul>
+        </fieldset>
+        <div class="cost-per-day">
+          <label for="cost">Стоимость в сутки (Р):</label>
+          <output name="costoutput"></output>
+          <input type="range" step="1" id="cost" name="cost-field" min="1" max="1000000">
+          <button type="submit" aria-label="Кнопка указания параметров отеля">Показать</button>
+        </div>
+      </form>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска:</h2>
         <p class="results__count">Найдено: <span>3</span></p>
@@ -40,8 +64,9 @@
       <section class="hotels">
         <h2 class="visually-hidden">Результаты поиска отелей</h2>
         <article class="hotels__item hotel"> <!--Первый ряд-->
+          <h3 class="visually-hidden">Первый результат</h3>
 
-          <a class="hotel__image" href="#"><img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото отеля"></a>
+          <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото отеля"></a>
           <div class="hotel__description"> <!--Блок с тремя подблоками-->
             <p class="hotel__name"><a href="#">Amara resort &amp; spa</a></p>
             <div class="hotel__info">
@@ -61,8 +86,9 @@
         </article>
 
         <article class="hotels__item hotel"> <!--Первый ряд-->
+          <h3 class="visually-hidden">Второй результат</h3>
 
-          <a class="hotel__image" href="#"><img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото отеля"></a>
+          <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото отеля"></a>
           <div class="hotel__description"> <!--Блок с тремя подблоками-->
             <p class="hotel__name"><a href="#">Desert Quail Inn</a></p>
             <div class="hotel__info">
@@ -82,8 +108,9 @@
         </article>
 
         <article class="hotels__item hotel"> <!--Первый ряд-->
+          <h3 class="visually-hidden">Третий результат</h3>
 
-          <a class="hotel__image" href="#"><img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото отеля"></a>
+          <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото отеля"></a>
           <div class="hotel__description"> <!--Блок с тремя подблоками-->
             <p class="hotel__name"><a href="#">Villas at Poco Diablo</a></p>
             <div class="hotel__info">
@@ -110,15 +137,15 @@
       </div>
       <div class="social">
         <ul>
-        <li class="social__button">Twitter</li>
-        <li class="social__button">Facebook</li>
-        <li class="social__button">YouTube</li>
+        <li class="social__button" aria-label="Мы в Твиттере">Twitter</li>
+        <li class="social__button" aria-label="Мы в Фэйсбуке">Facebook</li>
+        <li class="social__button" aria-label="Мы на Ютубе">YouTube</li>
         </ul>
       </div>
       <div class="copyright">
         <p>
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"  aria-label="Сделано в HTML Academy"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
         </p>
       </div>
     </footer>
