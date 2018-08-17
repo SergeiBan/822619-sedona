@@ -19,30 +19,37 @@
     </header>
 
     <main class="container">
-      <form action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value">
+      <form class="hotel-choice" action="https://echo.htmlacademy.ru" method="post"> <!--oninput="costoutput.value=cost.value" так я собирался сделать вывод в поле output-->
         <h2 class="visually-hidden">Форма выбора параметров отеля</h2>
-        <fieldset class="infrastructure">
-          <p>Инфраструктура</p>
-          <ul class="infrastructure__list">
-            <li><label><input type="checkbox" id="pool" name="pool-field">Бассейн</label></li>
+        <fieldset class="hotel_choice__specs">
+          <legend>Инфраструктура:</legend>
+          <ul class="hotel-choice__list">
+            <li><label><input type="checkbox" id="pool" name="pool-field" checked>Бассейн</label></li>
             <li><label><input type="checkbox" id="parking" name="parking-field">Парковка</label></li>
             <li><label><input type="checkbox" id="wi-fi" name="wi-fi-field">Wi-Fi</label></li>
           </ul>
         </fieldset>
-        <fieldset class="housing-type">
-          <legend>Тип жилья</legend>
-          <ul class="housing-type__list">
-            <li><label><input type="checkbox" id="inn" name="inn-field">Гостиница</label></li>
-            <li><label><input type="checkbox" id="motel" name="motel-field">Мотель</label></li>
-            <li><label><input type="checkbox" id="apartments" name="apartments-field">Апартаменты</label></li>
+        <fieldset class="hotel-choice__specs">
+          <legend>Тип жилья:</legend>
+          <ul class="hotel-choice__list">
+            <li><label><input type="checkbox" id="inn" name="inn-field" checked>Гостиница</label></li>
+            <li><label><input type="checkbox" id="motel" name="motel-field" checked>Мотель</label></li>
+            <li><label><input type="checkbox" id="apartments" name="apartments-field" checked>Апартаменты</label></li>
           </ul>
         </fieldset>
-        <div class="cost-per-day">
-          <label for="cost">Стоимость в сутки (Р):</label>
-          <output name="costoutput"></output>
-          <input type="range" step="1" id="cost" name="cost-field" min="1" max="1000000">
-          <button type="submit" aria-label="Кнопка указания параметров отеля">Показать</button>
-        </div>
+        <fieldset class="hotel-choice__cost-per-day">
+          <legend>Стоимость в сутки (Р): <output name="costoutput"></output></legend>
+          <p class="hotel-choice__input">
+            <label>От <input type="text" value="0"></label>
+          </p>
+          <p class="hotel-choice__input">
+            <label>До <input type="text" value="3000"></label>
+          </p>
+
+          <div class="hotel-choice__price-range">Ползунки выбора диапазона стоимости</div>
+
+          <button class="hotel-choice__btn" type="submit">Показать</button>
+        </fieldset>
       </form>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска:</h2>
@@ -137,15 +144,15 @@
       </div>
       <div class="social">
         <ul>
-        <li class="social__button"><a href="#">Twitter</a></li>
-        <li class="social__button"><a href="#">Facebook</a></li>
-        <li class="social__button"><a href="#">YouTube</a></li>
+          <li class="social__button"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li class="social__button"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li class="social__button"><a href="#"><span class="visually-hidden">YouTube</span></a></li>
         </ul>
       </div>
       <div class="copyright">
         <p>
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"  aria-label="Сделано в HTML Academy"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
         </p>
       </div>
     </footer>
