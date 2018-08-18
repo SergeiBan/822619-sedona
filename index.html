@@ -101,22 +101,22 @@
         <button class="btn search-btn" type="submit" id="hotel-search" name="hotel-search-field">Поиск гостиницы в Седоне</button>
         
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="search__arrival">
+          <div class="search__date">
             <p>
               <label for="arrival">Дата заезда:</label>
             </p>
             <p>
               <input type="text" id="arrival" name="arrival-field" value="24 апреля 2017">
-              <img class="search__calendar" src="img/icon-calendar.svg" alt="Выбор даты заезда">
+              <button class="search__calendar-btn" type="button">Календарь</button>
             </p>  
           </div>
-          <div class="search__leaving">
+          <div class="search__date">
             <p>
               <label for="leaving">Дата выезда:</label>
             </p>
             <p>
               <input type="text" id="leaving" name="leaving-field" value="4 июля 2017">
-              <img class="search__calendar" src="img/icon-calendar.svg" alt="Выбор даты выезда">
+              <button class="search__calendar-btn" type="button">Календарь</button>
             </p>
           </div>
           <div class="search__adults">
@@ -124,9 +124,9 @@
               <label for="adults">Взрослые:</label>
             </p>
             <p>
-              <img class="search__number" src="img/icon-minus.png" alt="Уменьшить число">
+              <button class="search__minus-btn" type="button">Уменьшить</button>
               <input type="number" id="adults" name="adults-field" value="2">
-              <img class="search__number" src="img/icon-plus.png" alt="Увеличить число">
+              <button class="search__plus-btn" type="button">Увеличить</button>
             </p>
           </div>
           <div class="search__children">
@@ -134,9 +134,9 @@
               <label for="children">Дети:</label>
             </p>
             <p>
-              <img class="search__number" src="img/icon-minus.png" alt="Уменьшить число">
+              <button class="search__minus-btn" type="button">Уменьшить</button>
               <input type="number" id="children" name="children-field" value="0">
-              <img class="search__number" src="img/icon-plus.png" alt="Увеличить число">
+              <button class="search__plus-btn" type="button">Увеличить</button>
             </p>
           </div>
           <div class="search__btn">
