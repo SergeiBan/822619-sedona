@@ -110,6 +110,7 @@ a {
   color: #ffffff;
   font-weight: bold;
   text-align: center;
+  border: none;
 }
 
 .btn:hover {
@@ -132,6 +133,7 @@ a {
 
 .search__form input {
   background-color: #f2f2f2;
+  border: none;
 }
 
 .search__form input:focus {
@@ -144,6 +146,10 @@ a {
   text-align: left;
   font-weight: bold;
   color: #000000;
+}
+
+.search__form input[type="number"][value]{
+  text-align: center;
 }
 
 .find-btn {
@@ -181,6 +187,14 @@ a {
   background: url("../img/bg-hotels.jpg") 50% 50% no-repeat;
 }
 
+.hotel-choice li {
+  list-style: none;
+}
+
+.hotel-choice fieldset {
+  border: none;
+}
+
 .hotel-choice legend {
   font-size: 16px;
   line-height: 21px;
@@ -194,11 +208,19 @@ a {
   color: #ffffff;
 }
 
+.hotel-choice__price-input input {
+  border: none;
+}
+
+.hotel-choice__price-input {
+  border: 2px solid #ffffff;
+  /*Ужмется, когда тут будет флекс*/
+}
+
 .hotel-choice__cost-per-day input {
   background: transparent;
 }
 
-/*Не меняется value! */
 .hotel-choice__cost-per-day input[value] {
   font-size: 14px;
   line-height: 21px;
@@ -212,6 +234,7 @@ a {
   text-align: left;
   color: #ffffff;
   background-color: rgba(121, 154, 209, 0);
+  border: 2px solid #ffffff;
 }
 
 .hotel-choice__btn:hover {
