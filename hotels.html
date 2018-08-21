@@ -2,18 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sedona.css" rel="stylesheet">
     <title>HTML Academy: Отели Седоны</title>
   </head>
-  <body>
+  <body class="hotels-body">
 
     <header class="header">
       <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html" aria-label="Логотип Седоны"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
-        <ul>
+        <a class="main-nav__logo" href="index.html" aria-label="Логотип Седоны"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
+        <ul class="main-nav__list">
           <li><a class="main-nav__item">Информация</a></li>
           <li><a class="main-nav__item">Фото и видео</a></li>
           <li><a class="main-nav__item">Карта штата</a></li>
-          <li><a class="main-nav__item">Гостиницы</a></li>
+          <li><a class="main-nav__item main-nav__item--current">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +59,7 @@
         <div class="results__type">
           <p class="results__type-name"><span>Сортировка:</span></p>
           <ul class="results__type-list">
-            <li><a href="#">По цене</a></li>
+            <li><a class="active" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
@@ -86,7 +89,7 @@
           </div>
           <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
             <p class="hotel__stars"><span class="visually-hidden">4 звезды</span></p>
-            <p class="hote__rating">Рейтинг: <span>8,5</span></p>
+            <p class="hotel__rating">Рейтинг: <span>8,5</span></p>
           </div>
 
         </article>
@@ -108,7 +111,7 @@
           </div>
           <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
             <p class="hotel__stars"><span class="visually-hidden">3 звезды</span></p>
-            <p class="hote__rating">Рейтинг: <span>8,9</span></p>
+            <p class="hotel__rating">Рейтинг: <span>8,9</span></p>
           </div>
 
         </article>
@@ -130,7 +133,7 @@
           </div>
           <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
             <p class="hotel__stars"><span class="visually-hidden">2 звезды</span></p>
-            <p class="hote__rating">Рейтинг: <span>9,2</span></p>
+            <p class="hotel__rating">Рейтинг: <span>9,2</span></p>
           </div>
 
         </article>
