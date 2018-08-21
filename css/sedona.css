@@ -111,6 +111,8 @@ a {
   font-weight: bold;
   text-align: center;
   border: none;
+  font-family: inherit;
+  text-transform: inherit;
 }
 
 .btn:hover {
@@ -235,6 +237,8 @@ a {
   color: #ffffff;
   background-color: rgba(121, 154, 209, 0);
   border: 2px solid #ffffff;
+  font-family: inherit;
+  text-transform: inherit;
 }
 
 .hotel-choice__btn:hover {
