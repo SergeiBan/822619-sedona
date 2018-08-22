@@ -7,6 +7,11 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #ffffff;
+  text-align: center;
+}
+
+.hotels-body {
+  text-align: left;
 }
 
 a {
@@ -15,54 +20,46 @@ a {
 }
 .main-nav__list li {
   list-style: none;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   text-align: center;
 }
 
-.main-nav__list a {
+.main-nav__item {
   color: #000000;
-  background-color: #ffffff;
 }
 
-.main-nav__list a:hover {
+.main-nav__item:hover {
   color: #81b3d2;
-  background-color: #ffffff;
 }
 
-.main-nav__list a:active {
+.main-nav__item:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
 }
 
-.main-nav .main-nav__item--current {
+.main-nav__item:not([href]) {
   color: #766357;
-  background-color: #ffffff;
+}
+
+.features__intro {
+  line-height: 26px;
 }
 
 .features__attention {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
-  text-align: center;
   color: #000000;
-  background-color: #ffffff;;
 }
 
-.features__item-about,
+/* .features__item-about,
 .recommendations__about {
   text-align: center;
-}
-
-.features__reasons {
-  line-height: 26px;
-  text-align: center;
-}
+} */
 
 .features__item-header {
   color: #000000;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
 }
 
@@ -92,7 +89,7 @@ a {
 .search-offer__interest {
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
@@ -108,7 +105,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   border: none;
   font-family: inherit;
@@ -128,7 +125,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
 }
@@ -146,7 +143,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -170,7 +167,7 @@ a {
 .visit__link {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
@@ -200,7 +197,7 @@ a {
 .hotel-choice legend {
   font-size: 16px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
   color: #ffffff;
 }
@@ -252,7 +249,7 @@ a {
 .results__count {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
   color: #000000;
   background-color: #ffffff;
@@ -292,7 +289,7 @@ a.active {
 .hotel__name a {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
   color: #000000;
   background-color: #ffffff;
@@ -315,7 +312,7 @@ a.active {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
