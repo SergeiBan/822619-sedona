@@ -315,3 +315,26 @@ a.active {
   color: #666666;
   text-align: center;
 }
+
+/*Начало сеток*/
+
+/* .main-nav {
+  display: flex;
+} */
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+}
