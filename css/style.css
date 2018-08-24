@@ -17,8 +17,8 @@ body {
 
 a {
   text-decoration: none;
-
 }
+
 .main-nav__list li {
   list-style: none;
   font-weight: 700;
@@ -186,11 +186,11 @@ a {
   list-style: none;
 }
 
-.hotel-choice fieldset {
+/* .hotel-choice fieldset {
   border: none;
-}
+} */
 
-.hotel-choice legend {
+.hotel-choice .legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -323,11 +323,7 @@ a.active {
 
 /*Начало сеток*/
 
-/* .main-nav {
-  display: flex;
-} */
-
-.main {
+.container {
   display: flex;
   flex-direction: column;
 }
@@ -413,4 +409,114 @@ a.active {
 .copyright {
   display: flex;
   align-items: center;
+}
+
+.hotel-choice {
+  display: flex;
+  padding-top: 31px;
+}
+
+.hotel-choice > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  outline: 1px solid red;
+}
+
+.hotel-choice > div:first-of-type {
+  margin-left: 72px;
+  margin-right: 115px;
+}
+
+.hotel-choice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-choice__cost-per-day {
+  width: 317px;
+  margin-left: auto;
+  margin-right: 74px;
+}
+
+.hotel-choice__price-range {
+  margin-bottom: 34px;
+}
+
+.hotel-choice__list .legend {
+  margin-bottom: 32px;
+}
+
+.hotel-choice__list li:nth-of-type(-n+2) {
+  margin-bottom: 36px;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+}
+
+.results li {
+  list-style: none;
+}
+
+.results__type {
+  display: flex;
+}
+
+.results__type-list {
+  display: flex;
+}
+
+.results__type-list li:nth-of-type(-n+2) {
+  margin-right: 33px;
+}
+
+.results-direction {
+  display: flex;
+  margin-right: 73px;
+  margin-left: auto;
+}
+
+.results__count {
+  margin-left: 72px;
+  margin-right: 49px;
+}
+
+.results__type-name {
+  margin-right: 40px;
+}
+
+.hotels > article {
+  display: flex;
+}
+
+.hotels {
+  padding-left: 72px;
+}
+
+.hotels p {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  border: 1px solid red;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px, 1px, 1px, 1px);
+  margin: -1px;
+  border: 0;
+  padding: 0;
 }
