@@ -8,6 +8,7 @@
     <title>HTML Academy: Отели Седоны</title>
   </head>
   <body class="hotels-body">
+  <div class="wrapper">
 
     <header class="header">
       <nav class="main-nav">
@@ -44,8 +45,14 @@
         <div class="hotel-choice__cost-per-day">
           <div class="legend">Стоимость в сутки (Р): <output name="costoutput"></output></div>
           <div class="hotel-choice__price-input">
-            <label class="hotel-choice__input">От <input type="text" value="0"></label>
-            <label class="hotel-choice__input">До <input type="text" value="3000"></label>
+            <label class="hotel-choice__input">
+              <span>От</span>
+              <input type="text" value="0">
+            </label>
+            <label class="hotel-choice__input">
+              <span>До</span>
+              <input type="text" value="3000">
+            </label>
           </div>
 
           <div class="hotel-choice__price-range">Ползунки выбора диапазона стоимости</div>
@@ -54,15 +61,17 @@
         </div>
       </form>
       <section class="results">
-        <h2 class="visually-hidden">Результаты поиска:</h2>
-        <p class="results__count">Найдено: <span>3</span></p>
-        <div class="results__type">
-          <p class="results__type-name"><span>Сортировка:</span></p>
-          <ul class="results__type-list">
-            <li><a class="active" href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
+        <div class="results-wrapper">
+          <h2 class="visually-hidden">Результаты поиска:</h2>
+          <p class="results__count">Найдено: <span>3</span></p>
+          <div class="results__type">
+            <p class="results__type-name"><span>Сортировка:</span></p>
+            <ul class="results__type-list">
+              <li><a class="active" href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
         </div>
         <ul class="results-direction">
           <li><a href="#" aria-label="Сортировка по возрастанию">В</a></li>
@@ -154,8 +163,9 @@
       </ul>
       <p class="copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </p>
     </footer>
+  </div>
   </body>
 </html>

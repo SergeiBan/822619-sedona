@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
+  <div class="wrapper">
     <header class="header">
       <nav class="main-nav">
         <a class="main-nav__logo"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
@@ -70,7 +70,7 @@
           </li>
           <li class="features__item  features__item--wide">
             <div class="features__wrapper">
-              <div class="features__item-about">
+              <div class="features__item-about reverse-order">
                 <h3 class="features__item-header features__item-header--wide">Там есть мост дьявола</h3>
                 <p class="features__item-number">№2</p>
                 <p class="features__item-details">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -105,36 +105,38 @@
       <section class="search-offer">
         <h2 class="visually-hidden">Лучшие предложения гостиниц!</h2>
         <p class="search-offer__interest">Заинтересовались?</p>
-        <p class="search-offer__question">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-offer__question">Укажите предполагаемые даты поездки,</p>
+        <p class="search-offer__question">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="btn search-btn" type="submit" id="hotel-search" name="hotel-search-field">Поиск гостиницы в Седоне</button>
-        
-        <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="search__date">
-            <p>
-              <label for="arrival">Дата заезда:</label>
-            </p>
-            <p>
-              <input type="date" id="arrival" name="arrival-field" value="2017-04-24">
-              <button class="search__calendar-btn" type="button">Календарь</button>
-            </p>  
-          </div>
-          <div class="search__date">
-            <p>
-              <label for="leaving">Дата выезда:</label>
-            </p>
-            <p>
-              <input type="date" id="leaving" name="leaving-field" value="2017-07-04">
-              <button class="search__calendar-btn" type="button">Календарь</button>
-            </p>
-          </div>
+      </section>
+      <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="search__date">
+          <p>
+            <label for="arrival">Дата заезда:</label>
+          </p>
+          <p>
+            <input type="date" id="arrival" name="arrival-field" value="2017-04-24">
+            <button class="search__calendar-btn" type="button" aria-label="Календарь">К</button>
+          </p>  
+        </div>
+        <div class="search__date">
+          <p>
+            <label for="leaving">Дата выезда:</label>
+          </p>
+          <p>
+            <input type="date" id="leaving" name="leaving-field" value="2017-07-04">
+            <button class="search__calendar-btn" type="button" aria-label="Календарь">К</button>
+          </p>
+        </div>
+        <div class="search__number">
           <div class="search__adults">
             <p>
               <label for="adults">Взрослые:</label>
             </p>
             <p>
-              <button class="search__minus-btn" type="button">Уменьшить</button>
+              <button class="search__minus-btn" type="button" aria-label="Уменьшить">Ум</button>
               <input type="number" id="adults" name="adults-field" value="2">
-              <button class="search__plus-btn" type="button">Увеличить</button>
+              <button class="search__plus-btn" type="button" aria-label="Увеличить">Ув</button>
             </p>
           </div>
           <div class="search__children">
@@ -142,16 +144,17 @@
               <label for="children">Дети:</label>
             </p>
             <p>
-              <button class="search__minus-btn" type="button">Уменьшить</button>
+              <button class="search__minus-btn" type="button" aria-label="Уменьшить">Ум</button>
               <input type="number" id="children" name="children-field" value="0">
-              <button class="search__plus-btn" type="button">Увеличить</button>
+              <button class="search__plus-btn" type="button" aria-label="Увеличить">Ув</button>
             </p>
           </div>
-          <div class="search__btn">
-            <button class="btn find-btn" type="submit" aria-label="Кнопка поиска отелей">Найти</button>
-          </div>
-        </form>
-      </section>
+        </div>
+        <div class="search__btn">
+          <button class="btn find-btn" type="submit" aria-label="Кнопка поиска отелей">Найти</button>
+        </div>
+      </form>
+      
 
       <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта"></div>
     </main>
@@ -167,8 +170,9 @@
       </ul>
       <p class="copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </p>
     </footer>
+  </div>
   </body>
 </html>
