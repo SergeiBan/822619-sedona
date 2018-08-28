@@ -33,6 +33,12 @@ body {
   position: relative;
 }
 
+.top-picture {
+  position: absolute;
+  top: -56px;
+  left: 0px;
+}
+
 .mountain-view::before {
   content: "";
   background: url("../img/bg-welcome.svg") center center no-repeat;
@@ -41,6 +47,7 @@ body {
   top: 76px;
   left: 370px;
   position: absolute;
+  z-index: 1;
 }
 
 .mountain-view::after {
@@ -123,8 +130,8 @@ a {
   font-weight: 700;
   font-size: 21px;
   color: #000000;
-  padding: 0 30px;
-  margin-bottom: 21px;
+  padding: 0 29px;
+  margin-bottom: 30px;
 }
 
 .features__item-about h3,
@@ -203,8 +210,8 @@ h3.features__item-header {
 
 .features__intro {
   line-height: 26px;
-  padding-top: 61px; 
-  padding-bottom: 56px;
+  padding-top: 59px; 
+  padding-bottom: 51px;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -293,8 +300,44 @@ p.search-offer__interest {
   flex-direction: column;
 }
 
+.search__date p {
+  position: relative;
+}
+
+.search__calendar-btn {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 21px;
+  height: 22px;
+  /* background: url("../img/icon-calendar.svg") 50% 50% no-repeat; */
+}
+
+.search__calendar-btn > * {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+.search__number p {
+  position: relative;
+}
+
+.search__minus-btn {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 12px;
+  height: 3px;
+  background: url("../img/icon-minus.png") 50% 50% no-repeat;
+}
+
 .search__date {
   display: flex;
+}
+
+.search__date input {
+  
 }
 
 .search__adults,
@@ -325,6 +368,7 @@ p.search-offer__interest {
 
 .search__form input[type="date"] {
   width: 346px;
+  min-height: 38px;
   /* Надпись уместится в строку, когда иконку календаря поставлю внуть строки */
 }
 
