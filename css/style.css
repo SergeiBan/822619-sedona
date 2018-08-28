@@ -700,6 +700,28 @@ a.active {
   justify-content: center;
 }
 
+.social__button a {
+  display: inline-block;
+  width: 46px;
+  min-height: 48px;
+}
+
+.social__button {
+  margin-right: 6px;
+}
+
+.social__button:nth-of-type(1) a {
+  background: #81b3d2 url("../img/icon-twitter.svg") center center no-repeat;
+}
+
+.social__button:nth-of-type(2) a {
+  background: #81b3d2 url("../img/icon-facebook.svg") center center no-repeat;
+}
+
+.social__button:nth-of-type(3) a {
+  background: #81b3d2 url("../img/icon-youtube.svg") center center no-repeat;
+}
+
 .copyright {
   display: flex;
   align-items: center;
@@ -719,12 +741,6 @@ a.active {
   display: flex;
   align-items: flex-start;
   padding: 31px 72px 31px 72px;
-}
-
-.hotel-choice .hotel-choice__list {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start; */
 }
 
 .hotel-choice__specs {
