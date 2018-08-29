@@ -45,7 +45,7 @@ body {
   width: 459px;
   height: 353px;
   top: 76px;
-  left: 370px;
+  left: 371px;
   position: absolute;
   z-index: 1;
 }
@@ -54,9 +54,9 @@ body {
   content: "";
   background: url("../img/polygon.svg") center center no-repeat;
   position: absolute;
-  width: 1202px;
-  height: 59px;
-  left: -1px;
+  width: 1200px;
+  height: 60px;
+  left:0px;
   bottom: -1px;
 }
 
@@ -91,9 +91,9 @@ a {
   list-style: none;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
-  width: 239px;
-  padding: 15px;
+  width: 240px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   word-break: break-all;
 }
 
@@ -130,8 +130,8 @@ a {
   font-weight: 700;
   font-size: 21px;
   color: #000000;
-  padding: 0 29px;
-  margin-bottom: 30px;
+  padding: 1px 29px 0;
+  margin-bottom: 28px;
 }
 
 .features__item-about h3,
@@ -144,24 +144,32 @@ a {
   margin: 0;
 }
 
+.features .features__item-header {
+  margin-bottom: 8px;
+}
+
 .features__item:first-of-type .features__item-about {
-  padding: 46px 55px 64px;
+  padding: 47px 55px 60px;
 }
 
 .features__item:nth-of-type(2) .features__item-about {
-  padding: 49px 49px 65px 48px;
+  padding: 46px 49px 60px 48px;
 }
 
 .features__item:nth-of-type(3) .features__item-about {
-  padding: 50px 97px 63px 95px;
+  padding: 47px 97px 60px 95px;
 }
 
 .features__item:nth-of-type(4) .features__item-about {
-  padding: 50px 69px 64px;
+  padding: 47px 69px 60px;
 }
 
 .features__item:nth-of-type(5) .features__item-about {
-  padding: 50px 72px 64px;
+  padding: 47px 72px 60px;
+}
+
+.features .features__item-number {
+  margin-bottom: 5px;
 }
 
 .recommendations__about {
@@ -175,7 +183,8 @@ a {
   background: url("../img/icon-houses.svg");
   background-repeat: no-repeat;
   top: 60px;
-  left: 163px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 72px;
   width: 75px;
 }
@@ -186,7 +195,8 @@ a {
   background: url("../img/icon-food.svg");
   background-repeat: no-repeat;
   top: 61px;
-  left: 163px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 70px;
   width: 74px;
 }
@@ -197,9 +207,10 @@ a {
   background: url("../img/icon-souvenirs.svg");
   background-repeat: no-repeat;
   top: 56px;
-  left: 162px;
-  height: 64px;
-  width: 76px;
+  left: 200px;
+  transform: translateX(-50%);
+  height: 76px;
+  width: 64px;
 }
 
 h3.features__item-header {
@@ -231,6 +242,11 @@ h3.features__item-header {
 
 .recommendations .features__item-header {
   color: #000000;
+  margin: -4px;
+}
+
+.features__item:not(.features__item--wide) h3 {
+  color: #000000;
 }
 
 .recommendations__item {
@@ -255,7 +271,6 @@ h3.features__item-header {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  padding-top: 57px;
 }
 
 p.search-offer__interest {
@@ -269,7 +284,7 @@ p.search-offer__interest {
 
 .search-btn {
   width: 568px;
-  padding: 35px 139px 33px 139px;
+  padding: 30px 139px 30px 139px;
 }
 
 .btn {
@@ -296,8 +311,12 @@ p.search-offer__interest {
   width: 568px;
   align-self: center;
   display: flex;
-  padding: 55px;
+  padding: 40px 55px 45px;
   flex-direction: column;
+}
+
+.search-offer {
+  padding-top: 49px;
 }
 
 .search__date p {
@@ -310,7 +329,6 @@ p.search-offer__interest {
   right: 9px;
   width: 21px;
   height: 22px;
-  /* background: url("../img/icon-calendar.svg") 50% 50% no-repeat; */
 }
 
 .search__calendar-btn > * {
@@ -319,25 +337,116 @@ p.search-offer__interest {
   right: -2px;
 }
 
+.search__calendar-btn path,
+.search__calendar-btn rect {
+  fill: #cacaca;
+}
+
+.search__calendar-btn:hover path,
+.search__calendar-btn:hover rect {
+  fill: #000000;
+}
+
+.search__calendar-btn:active path,
+.search__calendar-btn:active rect {
+  fill: #81b3d2;
+}
+
+.search__number input[type="number"]::-webkit-outer-spin-button,
+.search__number input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search__number input[type="number"] {
+  -moz-appearance: textfield;
+}
+.search__number input[type="number"]:hover,
+.search__number input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.search__number input[type=number]::-webkit-inner-spin-button,
+.search__number input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search__date input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.search__date input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search__date input[type="date"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search__number input[type="number"] {
+  appearance: none;
+  margin: 0;
+  background: #f2f2f2;
+  width: 38px;
+  height: 38px;
+}
+
 .search__number p {
   position: relative;
+  margin: 0;
 }
+
+.search__number button {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+/* .search__number button:active {
+  border: none;
+  outline: none;
+} */
 
 .search__minus-btn {
   position: absolute;
-  top: 18px;
-  left: 14px;
-  width: 12px;
-  height: 3px;
-  background: url("../img/icon-minus.png") 50% 50% no-repeat;
+  top: 0px;
+  left: -38px;
+}
+
+.search__plus-btn {
+  position: absolute;
+  top: 0;
+  right: -38px;
 }
 
 .search__date {
   display: flex;
+  align-items: center;
 }
 
 .search__date input {
-  
+  padding-left: 15px;
+}
+
+.search__date:first-of-type p:first-of-type {
+  margin-right: 23px;
+}
+
+.search__date:nth-of-type(2) p:first-of-type {
+  margin-right: 19px;
+}
+
+.search__date:nth-of-type(2) {
+  margin-bottom: 18px;
 }
 
 .search__adults,
@@ -352,9 +461,17 @@ p.search-offer__interest {
   margin-bottom: 54px;
 }
 
-.search__adults p:first-of-type,
+.search__adults p:first-of-type
+{
+  margin-right: 79px;
+}
+
 .search__children p:first-of-type {
-  margin-right: 41px;
+  margin-right: 65px;
+}
+
+.search__children {
+  padding-right: 38px;
 }
 
 .search__minus-btn,
@@ -408,7 +525,7 @@ p.search-offer__interest {
 .find-btn {
   background-color: #81b3d2;
   width: 458px;
-  padding: 17px 197px 22px 196px;
+  padding: 16px 197px 16px 196px;
 }
 
 .find-btn:hover {
@@ -418,6 +535,17 @@ p.search-offer__interest {
 .find-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+.map {
+  position: relative;
+}
+
+.map img {
+  position: absolute;
+  left: 0;
+  top: -385px;
+  z-index: 0;
 }
 
 .visit__link {
@@ -698,7 +826,7 @@ a.active {
   flex-direction: column;
   justify-content: space-between;
   min-height: 330px;
-  padding: 165px 50px 80px;
+  padding: 165px 50px 82px;
   box-sizing: border-box;
 }
 
@@ -718,7 +846,7 @@ a.active {
 }
 
 .search-offer__question:last-of-type {
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 }
 
 .footer {
@@ -728,6 +856,7 @@ a.active {
   width: 967px;
   padding: 36px 0;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .footer p {
