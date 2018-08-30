@@ -358,7 +358,7 @@ p.search-offer__interest {
   top: 8px;
   right: 9px;
   width: 21px;
-  height: 22px;
+  min-height: 22px;
 }
 
 .search__calendar-btn > * {
@@ -423,7 +423,7 @@ p.search-offer__interest {
   margin: 0;
   background: #f2f2f2;
   width: 38px;
-  height: 38px;
+  min-height: 38px;
 }
 
 .search__number p {
@@ -434,7 +434,7 @@ p.search-offer__interest {
 .search__number button {
   position: absolute;
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   border: none;
   background: #f2f2f2;
   padding: 0;
@@ -689,12 +689,12 @@ p.search-offer__interest {
   left: 50%;
 }
 
-.hotel:first-of-type .hotel__stars {
+.hotel__stars {
   display: flex;
   align-self: flex-end;
-  height: 17px;
-  width: 90px;
-  justify-content: space-between;
+  min-height: 17px;
+  width: 132px;
+  justify-content: flex-end;
 }
 
 .hotel__star {
@@ -702,6 +702,7 @@ p.search-offer__interest {
   height: 17px;
   background-image: url("../img/icon-star.svg");
   background-repeat: no-repeat;
+  margin-left: 6px;
 }
 
 .hotel-choice__cost-per-day input {
@@ -864,10 +865,12 @@ a.active {
   background-color: #503e33;
 }
 
-.hotel__rating {
+.hotel__evaluate .hotel__rating {
   color: #666666;
   background-color: #f2f2f2;
   text-align: center;
+  width: 110px;
+  align-self: flex-end;
 }
 
 /*Начало сеток*/
@@ -980,7 +983,7 @@ a.active {
   justify-content: space-between;
   align-items: center;
   width: 967px;
-  padding: 28px 0 36px 0;
+  padding: 30px 0 36px 0;
 
 }
 
@@ -1043,7 +1046,8 @@ a.active {
   align-items: flex-start;
   padding: 26px 72px 30px 72px;
   background-color: #799ad1;
-  background: url("../img/bg-hotels.jpg") 50% 50% no-repeat;
+  background: url("../img/bg-hotels.jpg") no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -1067,6 +1071,10 @@ a.active {
   box-sizing: border-box;
   width: 50%;
   text-align: right;
+}
+
+.hotel-choice__price-input label:first-of-type {
+  transform: translateX(7px);
 }
 
 .hotel-choice__price-range {
@@ -1171,11 +1179,11 @@ a.active {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 110px;
+  justify-content: space-between;
+  /* width: 110px; */
   min-height: 90px;
   align-self: flex-end;
-  outline: 1px solid red;
+  padding-bottom: 2px;
 }
 
 .hotel__info .hotel__type {
