@@ -21,6 +21,13 @@ body {
   text-align: center;
 }
 
+
+.hotels-body {
+  text-align: left;
+}
+
+
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -60,9 +67,7 @@ body {
   bottom: -2px;
 }
 
-.hotels-body {
-  text-align: left;
-}
+
 
 a {
   text-decoration: none;
@@ -97,17 +102,31 @@ a {
   word-break: break-all;
 }
 
-.main-nav li:nth-of-type(4) {
-  padding-right: 28px;
-  padding-left: 46px;
-}
+/* .main-nav__list li {
+  display: block;
+} */
 
-
-.main-nav li:nth-of-type(-n+2) a {
+.main-nav li:nth-of-type(1) {
+  padding-left: 72px;
   text-align: left;
 }
 
-.main-nav li:nth-of-type(n+3) a {
+.main-nav li:nth-of-type(2) {
+  padding-left: 73px;
+  text-align: left;
+}
+
+.main-nav li:nth-of-type(3) {
+  padding-right: 73px;
+  text-align: right;
+}
+
+.main-nav li:nth-of-type(4) {
+  padding-right: 72px;
+  text-align: right;
+}
+
+.hotels-body .main-nav li:nth-of-type(n+3) {
   text-align: right;
 }
 
@@ -603,6 +622,24 @@ p.search-offer__interest {
 
 .hotel-choice__list {
   list-style: none;
+}
+
+.hotel-choice__specs input {
+  display: none;
+}
+
+.hotel-choice__specs label {
+  position: relative;
+}
+
+.hotel-choice__specs svg {
+  position: absolute;
+  content: "";
+  /* width: 23px;
+  height: 23px; */
+  top: 0;
+  left: 0;
+  
 }
 
 .hotel-choice .legend {
