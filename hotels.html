@@ -22,7 +22,7 @@
     </header>
 
     <main class="container">
-      <form class="hotel-choice" action="https://echo.htmlacademy.ru" method="post"> <!--oninput="costoutput.value=cost.value" так я собирался сделать вывод в поле output-->
+      <form class="hotel-choice" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Форма выбора параметров отеля</h2>
         <div class="hotel-choice__specs">
           <div class="legend">Инфраструктура:</div>
@@ -94,7 +94,12 @@
               </div>
             </div>
             <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
-              <p class="hotel__stars"><span class="visually-hidden">4 звезды</span></p>
+              <div class="hotel__stars" aria-label="4 звезды">
+                <div class="hotel__star"></div>
+                <div class="hotel__star"></div>
+                <div class="hotel__star"></div>
+                <div class="hotel__star"></div>
+              </div>
               <p class="hotel__rating">Рейтинг: <span>8,5</span></p>
             </div>
         </article>

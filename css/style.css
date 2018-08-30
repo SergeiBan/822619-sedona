@@ -615,11 +615,6 @@ p.search-offer__interest {
   color: #000000;
 }
 
-.hotel-choice {
-  background-color: #799ad1;
-  background: url("../img/bg-hotels.jpg") 50% 50% no-repeat;
-}
-
 .hotel-choice__list {
   list-style: none;
 }
@@ -675,12 +670,38 @@ p.search-offer__interest {
 .hotel-choice__price-input {
   border: 2px solid #ffffff;
   text-align: center;
-  margin-bottom: 58px;
-  width: 314px;
-  padding: 5px 0;
+  margin-bottom: 53px;
+  width: 316px;
+  padding: 6px 0;
   display: flex;
   justify-content: space-around;
   border-radius: 3px;
+  position: relative;
+}
+
+.hotel-choice__price-input::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 50%;
+}
+
+.hotel:first-of-type .hotel__stars {
+  display: flex;
+  align-self: flex-end;
+  height: 17px;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.hotel__star {
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/icon-star.svg");
+  background-repeat: no-repeat;
 }
 
 .hotel-choice__cost-per-day input {
@@ -713,9 +734,9 @@ p.search-offer__interest {
   font-family: inherit;
   width: 133px;
   min-height: 32px;
-  margin-left: 90px;
+  margin-left: 85px;
   margin-right: auto;
-  padding: 5px 32px;
+  padding: 6px 32px;
   border-radius: 3px;
 }
 
@@ -1021,6 +1042,9 @@ a.active {
   display: flex;
   align-items: flex-start;
   padding: 26px 72px 30px 72px;
+  background-color: #799ad1;
+  background: url("../img/bg-hotels.jpg") 50% 50% no-repeat;
+  background-size: cover;
 }
 
 .hotel-choice__specs {
@@ -1145,11 +1169,13 @@ a.active {
 
 .hotel__evaluate {
   margin-left: auto;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 110px;
+  min-height: 90px;
   align-self: flex-end;
+  outline: 1px solid red;
 }
 
 .hotel__info .hotel__type {
