@@ -675,11 +675,12 @@ p.search-offer__interest {
 .hotel-choice__price-input {
   border: 2px solid #ffffff;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 58px;
   width: 314px;
-  padding: 11px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-around;
+  border-radius: 3px;
 }
 
 .hotel-choice__cost-per-day input {
@@ -691,7 +692,10 @@ p.search-offer__interest {
   width: 50%;
   border: 0;
   padding: 0;
-  
+}
+
+.hotel-choice__cost-per-day .legend {
+  margin-bottom: 13px;
 }
 
 .hotel-choice__input {
@@ -711,12 +715,17 @@ p.search-offer__interest {
   min-height: 32px;
   margin-left: 90px;
   margin-right: auto;
-  padding: 9px 32px;
+  padding: 5px 32px;
+  border-radius: 3px;
 }
 
 .hotel-choice__btn:hover {
   color: #000000;
   background-color: #ffffff;
+}
+
+.results {
+
 }
 
 .results p,
@@ -929,7 +938,7 @@ a.active {
 }
 
 
-footer {
+.footer {
   background-color: rgba(255, 255, 255, 0.9);
   width: 1200px;
 
@@ -937,6 +946,10 @@ footer {
   z-index: 2;
   top: 80px;
   padding-left: 132px;
+}
+
+.hotels-body footer {
+  top: 0px;
 }
 
 .footer-wrapper {
@@ -1007,7 +1020,7 @@ footer {
 .hotel-choice {
   display: flex;
   align-items: flex-start;
-  padding: 31px 72px 31px 72px;
+  padding: 26px 72px 30px 72px;
 }
 
 .hotel-choice__specs {
@@ -1037,11 +1050,11 @@ footer {
 }
 
 .legend {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .hotel-choice__list li {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .hotel-choice__list li:last-of-type {
@@ -1051,15 +1064,8 @@ footer {
 .results {
   display: flex;
   align-items: baseline;
-  padding: 21px 72px 21px 72px;
+  padding: 29px 72px 31px 72px;
   
-}
-
-.results-wrapper {
-  width: 517px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
 }
 
 .results li {
@@ -1096,6 +1102,11 @@ footer {
   align-items: flex-start;
   /* flex-direction: column; */
   padding: 30px 72px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hotel:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .hotel__wrapper {
