@@ -630,16 +630,25 @@ p.search-offer__interest {
 
 .hotel-choice__specs label {
   position: relative;
+  padding-left: 40px;
 }
 
-.hotel-choice__specs svg {
+.hotel-choice__specs label::before {
   position: absolute;
   content: "";
-  /* width: 23px;
-  height: 23px; */
-  top: 0;
-  left: 0;
-  
+  top: 0px;
+  left: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-checkbox-off.png");
+  background-size: contain;
+}
+
+.hotel-choice__checkbox:checked ~ label::before {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon-checkbox-on.png");
+  /* background-size: cover; */
 }
 
 .hotel-choice .legend {
