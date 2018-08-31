@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 1280px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -32,6 +32,11 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow:
+  3px 0px 9px 0px rgba(0, 0, 0, 0.25),
+  40px 0 0 0 #f2f2f2,
+  -3px 0px 9px 0px rgba(0, 0, 0, 0.25),
+  -40px 0 0 0 #f2f2f2;;
 }
 
 .mountain-view {
@@ -51,7 +56,7 @@ body {
   background: url("../img/bg-welcome.svg") center center no-repeat;
   width: 459px;
   height: 353px;
-  top: 76px;
+  top: 75px;
   left: 371px;
   position: absolute;
   z-index: 1;
@@ -61,10 +66,10 @@ body {
   content: "";
   background: url("../img/polygon.svg") center center no-repeat;
   position: absolute;
-  width: 1201px;
+  width: 1202px;
   height: 59px;
-  left:0px;
-  bottom: -2px;
+  left: -1px;
+  bottom: -1px;
 }
 
 
@@ -247,7 +252,7 @@ h3.features__item-header {
 .features__intro {
   line-height: 26px;
   padding-top: 59px; 
-  padding-bottom: 51px;
+  padding-bottom: 50px;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -309,7 +314,7 @@ p.search-offer__interest {
 
 .search-btn {
   width: 568px;
-  padding: 29px 139px 31px 139px;
+  padding: 30px 139px 30px 139px;
 }
 
 .btn {
@@ -321,6 +326,8 @@ p.search-offer__interest {
   border: none;
   text-transform: inherit;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .btn:hover {
@@ -341,9 +348,10 @@ p.search-offer__interest {
   position: relative;
   z-index: 2;
   background-color: #ffffff;
+  box-shadow: 0px 0 9px 0px rgba(0, 0, 0, 0.493);
 }
 
-.search-offer {
+.search-offer { 
   padding-top: 49px;
 }
 
@@ -639,16 +647,18 @@ p.search-offer__interest {
   left: 0px;
   width: 23px;
   height: 23px;
-  background-image: url("../img/icon-checkbox-off.png");
-  background-size: contain;
+  background-image: url("../img/icon-checkbox-sprite.png");
+  background-size: fill;
+  background-position: -1px -24px;
   background-repeat: no-repeat
 }
 
 .hotel-choice__checkbox:checked ~ label::before {
   width: 27px;
   height: 23px;
-  background-image: url("../img/icon-checkbox-on.png");
-  /* background-size: cover; */
+  background-image: url("../img/icon-checkbox-sprite.png");
+  background-position: -1px 0px;
+  background-repeat: no-repeat;
 }
 
 .hotel-choice .legend {
@@ -676,7 +686,7 @@ p.search-offer__interest {
   border: 2px solid #ffffff;
   text-align: center;
   margin-bottom: 53px;
-  width: 316px;
+  width: 318px;
   padding: 6px 0;
   display: flex;
   justify-content: space-around;
@@ -704,6 +714,7 @@ p.search-offer__interest {
   min-height: 17px;
   width: 132px;
   justify-content: flex-end;
+  margin-top: -1px;
 }
 
 .hotel__star {
@@ -726,7 +737,7 @@ p.search-offer__interest {
 }
 
 .hotel-choice__cost-per-day .legend {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .hotel-choice__input {
@@ -742,11 +753,11 @@ p.search-offer__interest {
   border: 2px solid #ffffff;
   text-transform: inherit;
   font-family: inherit;
-  width: 133px;
+  width: 137px;
   min-height: 32px;
   margin-left: 85px;
   margin-right: auto;
-  padding: 6px 32px;
+  padding: 6px 30px 6px 34px;
   border-radius: 3px;
 }
 
@@ -814,8 +825,8 @@ a.active {
 }
 
 .hotels .hotel__name {
-  margin-top: -7px;
-  margin-bottom: 8px;
+  margin-top: -6px;
+  margin-bottom: 7px;
 }
 
 .hotel__name a {
@@ -860,7 +871,7 @@ a.active {
 .hotel__btn--reserve {
   background-color: #766357;
   width: 142px;
-  padding: 3px 16px;
+  padding: 3px 15px 3px 17px;
 }
 
 .hotel__btn--reserve:hover {
@@ -877,7 +888,9 @@ a.active {
   background-color: #f2f2f2;
   text-align: center;
   width: 110px;
+  padding: 3px 0;
   align-self: flex-end;
+  margin-bottom: -2px;
 }
 
 /*Начало сеток*/
@@ -975,7 +988,7 @@ a.active {
 
   position: relative;
   z-index: 2;
-  top: 80px;
+  top: 78px;
   padding-left: 132px;
 }
 
@@ -1039,6 +1052,10 @@ a.active {
   justify-content: center;
 }
 
+.copyright span {
+  margin-top: -2px;
+}
+
 .copyright a {
   width: 115px;
   min-height: 41px;
@@ -1081,7 +1098,11 @@ a.active {
 }
 
 .hotel-choice__price-input label:first-of-type {
-  transform: translateX(7px);
+  transform: translateX(6px);
+}
+
+.hotel-choice__price-input label:last-of-type {
+  transform: translateX(-2px);
 }
 
 .hotel-choice__price-range {
@@ -1176,7 +1197,7 @@ a.active {
 }
 
 .hotel__info:first-of-type {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .hotel__btn--details {
