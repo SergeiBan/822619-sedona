@@ -552,6 +552,10 @@ p.search-offer__interest {
   border: 2px solid transparent;
 }
 
+.search__form input:focus {
+  outline: 1px solid #e5e5e5;
+}
+
 .search__form input:hover {
   background-color: #ebebeb;
 }
@@ -637,6 +641,7 @@ p.search-offer__interest {
   height: 23px;
   background-image: url("../img/icon-checkbox-off.png");
   background-size: contain;
+  background-repeat: no-repeat
 }
 
 .hotel-choice__checkbox:checked ~ label::before {
@@ -677,6 +682,10 @@ p.search-offer__interest {
   justify-content: space-around;
   border-radius: 3px;
   position: relative;
+}
+
+.hotel-choice__price-input input:focus {
+  outline: none;
 }
 
 .hotel-choice__price-input::after {
@@ -805,9 +814,8 @@ a.active {
 }
 
 .hotels .hotel__name {
-  margin-bottom: 6px;
-  
-  
+  margin-top: -7px;
+  margin-bottom: 8px;
 }
 
 .hotel__name a {
@@ -815,7 +823,6 @@ a.active {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  
 }
 
 .hotel__name a:hover {
@@ -1161,6 +1168,7 @@ a.active {
 .hotel__description {
   width: 750px;
   margin-left: 30px;
+  min-height: 90px;
 }
 
 .hotel__info {
@@ -1168,7 +1176,7 @@ a.active {
 }
 
 .hotel__info:first-of-type {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .hotel__btn--details {
@@ -1184,6 +1192,14 @@ a.active {
   min-height: 90px;
   align-self: flex-end;
   padding-bottom: 2px;
+}
+
+.results__sorting.active polyline {
+  fill: #81b3d2;
+}
+
+.results__sorting.inactive polygon {
+  fill: #cacaca;
 }
 
 .hotel__info .hotel__type {
