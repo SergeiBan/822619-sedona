@@ -648,8 +648,8 @@ p.search-offer__interest {
   width: 23px;
   height: 23px;
   background-image: url("../img/icon-checkbox-sprite.png");
-  background-size: fill;
-  background-position: -1px -24px;
+  /* background-size: fill; */
+  background-position: -1px -72px;
   background-repeat: no-repeat
 }
 
@@ -657,7 +657,7 @@ p.search-offer__interest {
   width: 27px;
   height: 23px;
   background-image: url("../img/icon-checkbox-sprite.png");
-  background-position: -1px 0px;
+  background-position: -1px -24px;
   background-repeat: no-repeat;
 }
 
