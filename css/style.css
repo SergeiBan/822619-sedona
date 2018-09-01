@@ -19,24 +19,19 @@ body {
   color: #333333;
   background-color: #f2f2f2;
   text-align: center;
+  font-kerning: none;
 }
-
 
 .hotels-body {
   text-align: left;
 }
 
-
-
 .wrapper {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow:
-  3px 0px 9px 0px rgba(0, 0, 0, 0.25),
-  40px 0 0 0 #f2f2f2,
-  -3px 0px 9px 0px rgba(0, 0, 0, 0.25),
-  -40px 0 0 0 #f2f2f2;;
+  box-shadow: 
+  0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .mountain-view {
@@ -187,11 +182,11 @@ a {
 }
 
 .features__item:nth-of-type(3) .features__item-about {
-  padding: 47px 97px 60px 95px;
+  padding: 47px 90px 60px 90px;
 }
 
 .features__item:nth-of-type(4) .features__item-about {
-  padding: 47px 69px 60px;
+  padding: 47px 65px 60px;
 }
 
 .features__item:nth-of-type(5) .features__item-about {
@@ -252,13 +247,9 @@ h3.features__item-header {
 .features__intro {
   line-height: 26px;
   padding-top: 59px; 
-  padding-bottom: 50px;
+  padding-bottom: 51px;
   max-width: 500px;
   margin: 0 auto;
-}
-
-.features__reasons {
-  padding: 0 5px;
 }
 
 .features__item--wide {
@@ -313,8 +304,9 @@ p.search-offer__interest {
 }
 
 .search-btn {
-  width: 568px;
-  padding: 30px 139px 30px 139px;
+  display: block;
+  width: 100%;
+  padding: 30px;
 }
 
 .btn {
@@ -340,25 +332,35 @@ p.search-offer__interest {
 }
 
 .search__form {
-  width: 568px;
-  align-self: center;
-  display: flex;
-  padding: 55px 55px 55px;
-  flex-direction: column;
-  position: relative;
+  width: 100%;
+  padding: 55px;
+  position: absolute;
+  left: 0;
+  top: 100%;
   z-index: 2;
   background-color: #ffffff;
-  box-shadow: 0px 0 9px 0px rgba(0, 0, 0, 0.493);
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 
 .search-offer { 
   padding-top: 49px;
+  position: relative;
+  width: 568px;
+  /* align-self: center; */
+  margin: 0 auto;
+
 }
 
 .search__date p {
   position: relative;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.search__date p:first-child {
+  width: 117px;
+  margin-right: 5px;
+  text-align: left;
 }
 
 .search__calendar-btn {
@@ -473,14 +475,6 @@ p.search-offer__interest {
 
 .search__date input {
   padding-left: 15px;
-}
-
-.search__date:first-of-type p:first-of-type {
-  margin-right: 23px;
-}
-
-.search__date:nth-of-type(2) p:first-of-type {
-  margin-right: 19px;
 }
 
 .search__date:nth-of-type(1) {
@@ -600,16 +594,20 @@ p.search-offer__interest {
 }
 
 .map {
-  position: relative;
-  top: -10px;
-  z-index: 1;
+  height: 593px;
+  margin-bottom: -120px;
 }
 
 .map img {
-  position: absolute;
-  left: 0;
-  top: -385px;
-  z-index: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visit,
+.social,
+.copyright {
+  width: 33.333333%;
 }
 
 .visit__link {
@@ -978,41 +976,30 @@ a.active {
 }
 
 .search-offer__question:last-of-type {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 
 .footer {
   background-color: rgba(255, 255, 255, 0.9);
-  width: 1200px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0;
+  /* opacity: 0.9; */
   position: relative;
-  z-index: 2;
-  top: 78px;
-  padding-left: 132px;
+}
+
+.footer ul {
+  padding: 0;
 }
 
 .hotels-body footer {
   top: 0px;
 }
 
-.footer-wrapper {
-  /* position: relative;
-  top: 85px; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 967px;
-  padding: 30px 0 36px 0;
-
-}
-
 .footer p {
   margin: 0;
-}
-
-.visit a {
-  margin: 0 auto;
 }
 
 .social {
@@ -1020,29 +1007,28 @@ a.active {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top: 6px;
-  padding-right: 3px;
+  padding: 0;
 }
 
 .social__button a {
-  display: inline-block;
+  display: block;
   width: 46px;
-  min-height: 48px;
+  height: 48px;
 }
 
-.social__button {
+.social__button:not(:last-child) {
   margin-right: 6px;
 }
 
-.social__button:nth-of-type(1) a {
+.social__button--twitter a {
   background: #81b3d2 url("../img/icon-twitter.svg") center center no-repeat;
 }
 
-.social__button:nth-of-type(2) a {
+.social__button--facebook a {
   background: #81b3d2 url("../img/icon-facebook.svg") center center no-repeat;
 }
 
-.social__button:nth-of-type(3) a {
+.social__button--youtube a {
   background: #81b3d2 url("../img/icon-youtube.svg") center center no-repeat;
 }
 
