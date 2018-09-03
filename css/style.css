@@ -694,22 +694,22 @@ p.search-offer__interest {
 }
 
 .hotel__stars {
-  display: flex;
-  align-self: flex-end;
-  min-height: 17px;
-  width: 113px;
-  justify-content: space-between;
+  height: 17px;
   margin-top: -1px;
-  background: url("../img/icon-star.svg") repeat-x;
-  background-position: 0 0;
+  background: url("../img/icon-star.svg") space;
+  align-self: flex-end;
 }
 
-.hotel__star {
-  width: 18px;
-  height: 17px;
-  background-image: url("../img/icon-star.svg");
-  background-repeat: no-repeat;
-  margin-left: 6px;
+.hotel__stars--first {
+  width: 89px;
+}
+
+.hotel__stars--second {
+  width: 65px;
+}
+
+.hotel__stars--third {
+  width: 41px;
 }
 
 .hotel-choice__cost-per-day input {
