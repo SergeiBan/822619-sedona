@@ -420,7 +420,7 @@ p.search-offer__interest {
 
 .search__number input[type="number"]::-webkit-outer-spin-button,
 .search__number input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  -webkit-appearance: textfield;
   margin: 0;
 }
 
@@ -438,35 +438,12 @@ p.search-offer__interest {
   margin: 0;
 }
 
-.search__date input[type="date"]::-webkit-calendar-picker-indicator {
-  -webkit-appearance: none;
-  margin: 0;
-  display: none;
-}
-
-.search__date input[type="date"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.search__date input[type="date"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.search__date input[type="date"]::-webkit-clear-button {
-  display: none;
-}
-
-.search__date input[type="date"]
-
 .search__number input[type="number"] {
   appearance: none;
-  margin: 0 -4px 0 0;
+  margin: 0;
   background: #f2f2f2;
   width: 38px;
   height: 38px;
-  /* border: 1px solid #f2f2f2; */
 }
 
 .search__choose {
@@ -488,10 +465,6 @@ p.search-offer__interest {
   background: #f2f2f2;
   padding: 0;
   margin: 0;
-}
-
-.search__number .search__minus-btn {
-  margin-right: -4px;
 }
 
 .search__date {
@@ -567,10 +540,9 @@ p.search-offer__interest {
   width: 38px;
 }
 
-.search__form input[type="date"] {
+.search__form input[type="text"] {
   width: 346px;
   min-height: 38px;
-  /* Надпись уместится в строку, когда иконку календаря поставлю внуть строки */
 }
 
 .search__form label {
@@ -586,14 +558,11 @@ p.search-offer__interest {
   border: 2px solid transparent;
 }
 
-.search__form input:focus {
-  border: 2px solid #e5e5e5;
-}
-
 .search__form input:hover {
   background-color: #ebebeb;
 }
 .search__form input:focus {
+  outline: none;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
