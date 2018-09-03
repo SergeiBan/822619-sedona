@@ -563,6 +563,15 @@ p.search-offer__interest {
 .map {
   height: 593px;
   margin-bottom: -120px;
+  position: relative;
+}
+
+.map__interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 593px;
 }
 
 .map img {
@@ -964,6 +973,11 @@ a.active {
   margin-bottom: 46px;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .footer {
   background-color: rgba(255, 255, 255, 0.9);
@@ -1041,7 +1055,7 @@ a.active {
 
 .copyright a {
   width: 115px;
-  min-height: 41px;
+  height: 41px;
   margin-left: 8px;
 }
 
