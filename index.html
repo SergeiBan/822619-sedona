@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <script type="text/javascript" src="script.js"></script> -->
   </head>
   <body>
   <div class="wrapper">
@@ -267,7 +266,7 @@
         </p>
       </footer>
 
-    <script>
+    <!-- <script>
       var link = document.querySelector(".search-btn");
       var popup = document.querySelector(".search__form");
       var arrival = popup.querySelector(".search__arrival-input input");
@@ -306,7 +305,7 @@
 
       popup.addEventListener("submit", function (evt) {
         if (!adults.value || !arrival.value || !leaving.value) {
-          evt.preventDefault();
+          // evt.preventDefault();
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
@@ -321,6 +320,7 @@
         }
       });
 
-    </script>
+    </script> -->
   </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
