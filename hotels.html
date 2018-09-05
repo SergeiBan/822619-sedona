@@ -46,11 +46,11 @@
           <div class="hotel-choice__price-input">
             <label class="hotel-choice__input">
               <span>От</span>
-              <input type="text" value="0">
+              <input type="text" value="0" name="hotel-choice__from">
             </label>
             <label class="hotel-choice__input">
               <span>До</span>
-              <input type="text" value="3000">
+              <input type="text" value="3000" name="hotel-choice__to">
             </label>
           </div>
 
@@ -65,24 +65,24 @@
           <div class="results__type">
             <p class="results__type-name"><span>Сортировка:</span></p>
             <ul class="results__type-list">
-              <li><a class="active" href="#">По цене</a></li>
+              <li><a class="active">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
           </div>
         <ul class="results-direction">
-          <li><a href="#" aria-label="Сортировка по возрастанию">
-            <div class="results__sorting inactive">
-              <svg  x="0px" y="0px" width="11px" height="10px">
-              <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+          <li><a class="direction inactive" href="#" aria-label="Сортировка по возрастанию">
+            <div class="results__sorting">
+              <svg x="0px" y="0px" width="11px" height="10px">
+                <polygon class="svg-direction" fill="#231F20" points="5.5,0 0,10 11,10 "/>
               </svg>
             </div>
             </a>
           </li>
-          <li><a href="#" aria-label="Сортировка по убыванию">
-            <div class="results__sorting active">
+          <li><a class="direction active" aria-label="Сортировка по убыванию">
+            <div class="results__sorting">
                 <svg x="0px" y="0px" width="11px" height="10px">
-                <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  <polyline class="svg-direction" fill="#231F20" points="5.5,10 0,0 11,0 "/>
                 </svg>
             </div>
             </a>
@@ -165,8 +165,7 @@
         <li class="social__button social__button--twitter"><a href="#"><span class="visually-hidden">Twitter</span>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-       <image overflow="visible" width="17" height="15" xlink:href="t.png" >
-       </image>
+       
        <g id="W6EeEF_1_">
          <g>
            <path opacity="1" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
@@ -194,8 +193,6 @@
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-          <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" >
-          </image>
           <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
              M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
           </svg>

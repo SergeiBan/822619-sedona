@@ -15,6 +15,10 @@ try {
   isStorageSupport = false;
 } 
 
+if (!popup.classList.contains("modal-show")) {
+  popup.classList.add("modal-show");
+}
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
