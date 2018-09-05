@@ -21,11 +21,14 @@ if (!popup.classList.contains("modal-show")) {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
+
+  if (popup.classList.contains("modal-error")) {
+    popup.classList.remove("modal-error");
+  }
+  
   popup.classList.toggle("modal-show");
 
-  // if (popup.classList.contains("modal-error")) {
-  //   popup.classList.remove("modal-error");
-  // }
+  
 
 if (storage) {
   arrival.value = storage;

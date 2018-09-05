@@ -45,7 +45,6 @@ body {
   position: relative;
   background-image: url("../img/background-photo.jpg");
   background-position: 0 -56px;
-  background-size: fill;
   background-repeat: no-repeat;
 }
 
@@ -64,9 +63,9 @@ body {
   content: "";
   background: url("../img/polygon.svg") center center no-repeat;
   position: absolute;
-  width: 1201px; 
+  width: 1202px; 
   height: 59px;
-  left: 0px;
+  left: -1px;
   bottom: -1px;
 }
 
@@ -331,19 +330,19 @@ p.search-offer__interest {
 
 @keyframes vibration {
   0%  {
-    transform: translateX(-200px);
+    transform: translateY(-100px);
   }
 
   45% {
-    transform: translateX(70px);
+    transform: translateY(170px) skewY(30deg);
   }
 
   90% {
-    transform: translateX(-30px);
+    transform: translateY(-30px) skewY(-15deg);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -375,7 +374,7 @@ p.search-offer__interest {
 
 .modal-vibrate {
   /* animation: vibration 0.3s; */
-  animation: no-go 0.3s;
+  animation: vibration 0.3s;
 }
 
 .modal-error {
@@ -764,10 +763,9 @@ p.search-offer__interest {
   width: 2px;
   height: 22px;
   background-color: #ffffff;
-  top: 50%px;
-  transform: translateY(-50%);
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .hotel__stars {
