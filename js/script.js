@@ -1,5 +1,4 @@
 var link = document.querySelector(".search-btn");
-console.log(document);
 var popup = document.querySelector(".search__form");
 var arrival = popup.querySelector(".search__arrival-input input");
 var leaving = popup.querySelector(".search__leaving-input input");
@@ -21,25 +20,19 @@ if (!popup.classList.contains("modal-show")) {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-
   if (popup.classList.contains("modal-error")) {
     popup.classList.remove("modal-error");
   }
-  
   popup.classList.toggle("modal-show");
-
-  
-
-if (storage) {
-  arrival.value = storage;
-  leaving.value = localStorage.getItem("leaving");
-  adults.value = localStorage.getItem("adults");
-  children.value = localStorage.getItem("children");
-  submitButton.focus();
-} else {
-  arrival.focus();
-}
-
+  if (storage) {
+    arrival.value = storage;
+    leaving.value = localStorage.getItem("leaving");
+    adults.value = localStorage.getItem("adults");
+    children.value = localStorage.getItem("children");
+    submitButton.focus();
+  } else {
+    arrival.focus();
+  }
 });
 
 popup.addEventListener("submit", function (evt) {
@@ -49,7 +42,6 @@ popup.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
-      // evt.preventDefault();
       if (isStorageSupport) {
       localStorage.setItem("arrival", arrival.value);
       localStorage.setItem("leaving", leaving.value);

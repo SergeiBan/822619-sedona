@@ -11,7 +11,9 @@
   <div class="wrapper">
     <header class="header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html" aria-label="Логотип Седоны"><img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!"></a>
+        <a class="main-nav__logo" href="index.html" aria-label="Логотип Седоны">
+          <img src="img/logo.svg" width="140" height="71" alt="Седона - небольшой городок в Аризоне, заслуживающий большего!">
+        </a>
         <ul class="main-nav__list">
           <li><a href="#" class="main-nav__item">Информация</a></li>
           <li><a href="#" class="main-nav__item">Фото и видео</a></li>
@@ -20,27 +22,43 @@
         </ul>
       </nav>
     </header>
-
     <main class="container">
       <form class="hotel-choice" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Форма выбора параметров отеля</h2>
         <div class="hotel-choice__specs">
           <div class="legend">Инфраструктура:</div>
           <ul class="hotel-choice__list">
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="pool" name="pool-field" checked><label for="pool">Бассейн</label></li>
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="parking" name="parking-field"><label for="parking">Парковка</label></li>
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="wi-fi" name="wi-fi-field"><label for="wi-fi">Wi-Fi</label></li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="pool" name="pool-field" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="parking" name="parking-field">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="wi-fi" name="wi-fi-field">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
           </ul>
         </div>
         <div class="hotel-choice__specs">
           <div class="legend">Тип жилья:</div>
           <ul class="hotel-choice__list">
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="inn" name="inn-field" checked><label for="inn">Гостиница</label></li>
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="motel" name="motel-field" checked><label for="motel">Мотель</label></li>
-            <li><input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="apartments" name="apartments-field" checked><label for="apartments">Апартаменты</label></li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="inn" name="inn-field" checked>
+              <label for="inn">Гостиница</label>
+            </li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="motel" name="motel-field" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input class="hotel-choice__checkbox visually-hidden" type="checkbox" id="apartments" name="apartments-field" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
           </ul>
         </div>
-        
         <div class="hotel-choice__cost-per-day">
           <div class="legend">Стоимость в сутки (Р): <output name="costoutput"></output></div>
           <div class="hotel-choice__price-input">
@@ -53,9 +71,15 @@
               <input type="text" value="3000" name="hotel-choice__to">
             </label>
           </div>
-
-          <div class="hotel-choice__price-range"><span class="visually-hidden">Ползунки выбора диапазона стоимости</span></div>
-
+          <div class="hotel-choice__price-range">
+            <span class="visually-hidden">Ползунки выбора диапазона стоимости</span>
+            <svg class="hotel-choice__range" width="317px" height="24px">
+              <line x1="0px" y1="12px" x2="252px" y2="12px" stroke="#ffffff" stroke-width="2px"></line>
+              <line x1="252px" y1="12px" x2="317px" y2="12px" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2px"></line>
+            </svg>
+            <button class="hotel-choice__range-btn hotel-choice__range-btn--left" type="button"></button>
+            <button class="hotel-choice__range-btn hotel-choice__range-btn--right" type="button"></button>
+          </div>
           <button class="hotel-choice__btn" type="submit">Показать</button>
         </div>
       </form>
@@ -71,128 +95,124 @@
             </ul>
           </div>
         <ul class="results-direction">
-          <li><a class="direction inactive" href="#" aria-label="Сортировка по возрастанию">
-            
-            <svg x="0px" y="0px" width="11px" height="10px">
-              <polygon class="svg-direction" fill="#231F20" points="5.5,0 0,10 11,10 "/>
-            </svg>
-            
+          <li>
+            <a class="direction inactive" href="#" aria-label="Сортировка по возрастанию">
+              <svg x="0px" y="0px" width="11px" height="10px">
+                <polygon class="svg-direction" fill="#231F20" points="5.5,0 0,10 11,10 "/>
+              </svg>
             </a>
           </li>
-          <li><a class="direction active" aria-label="Сортировка по убыванию">
-            
+          <li>
+            <a class="direction active" aria-label="Сортировка по убыванию">
               <svg x="0px" y="0px" width="11px" height="10px">
                 <polyline class="svg-direction" fill="#231F20" points="5.5,10 0,0 11,0 "/>
               </svg>
-            
             </a>
           </li>
         </ul>
       </section>
-        
       <section class="hotels">
         <h2 class="visually-hidden">Результаты поиска отелей</h2>
-        <article class="hotels__item hotel"> <!--Первый ряд-->
-            <h3 class="visually-hidden">Первый результат</h3>
-
-            <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото отеля"></a>
-            <div class="hotel__description"> <!--Блок с тремя подблоками-->
-              <p class="hotel__name"><a href="#">Amara resort &amp; spa</a></p>
-              <div class="hotel__info">
-                <p class="hotel__type">Гостинца</p>
-                <p class="hotel__price">От 4000 Р.</p>
-              </div>            
-              <div class="hotel__info">
-                <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
-                <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
-              </div>
+        <article class="hotels__item hotel">
+          <h3 class="visually-hidden">Первый результат</h3>
+          <a class="hotel__image" href="#" aria-label="Фото отеля">
+            <img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото отеля">
+          </a>
+          <div class="hotel__description">
+            <p class="hotel__name"><a href="#">Amara resort &amp; spa</a></p>
+            <div class="hotel__info">
+              <p class="hotel__type">Гостиница</p>
+              <p class="hotel__price">От 4000 Р.</p>
+            </div>            
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
             </div>
-            <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
-              <div class="hotel__stars hotel__stars--first" aria-label="Четыре звезды"></div>
-              <p class="hotel__rating">Рейтинг: <span>8,5</span></p>
-            </div>
+          </div>
+          <div class="hotel__evaluate">
+            <div class="hotel__stars hotel__stars--first" aria-label="Четыре звезды"></div>
+            <p class="hotel__rating">Рейтинг: <span>8,5</span></p>
+          </div>
         </article>
-
-        <article class="hotels__item hotel"> <!--Первый ряд-->
-            <h3 class="visually-hidden">Второй результат</h3>
-
-            <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото отеля"></a>
-            <div class="hotel__description"> <!--Блок с тремя подблоками-->
-              <p class="hotel__name"><a href="#">Desert Quail Inn</a></p>
-              <div class="hotel__info">
-                <p class="hotel__type">Мотель</p>
-                <p class="hotel__price">От 3000 Р.</p>
-              </div>            
-              <div class="hotel__info">
-                <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
-                <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
-              </div>
+        <article class="hotels__item hotel">
+          <h3 class="visually-hidden">Второй результат</h3>
+          <a class="hotel__image" href="#" aria-label="Фото отеля">
+            <img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото отеля">
+          </a>
+          <div class="hotel__description">
+            <p class="hotel__name"><a href="#">Desert Quail Inn</a></p>
+            <div class="hotel__info">
+              <p class="hotel__type">Мотель</p>
+              <p class="hotel__price">От 3000 Р.</p>
+            </div>            
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
             </div>
-            <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
-              <div class="hotel__stars hotel__stars--second" aria-label="Три звезды"></div>
-              <p class="hotel__rating">Рейтинг: <span>8,9</span></p>
-            </div>
+          </div>
+          <div class="hotel__evaluate">
+            <div class="hotel__stars hotel__stars--second" aria-label="Три звезды"></div>
+            <p class="hotel__rating">Рейтинг: <span>8,9</span></p>
+          </div>
         </article>
-
-        <article class="hotels__item hotel"> <!--Первый ряд-->
-            <h3 class="visually-hidden">Третий результат</h3>
-
-            <a class="hotel__image" href="#" aria-label="Фото отеля"><img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото отеля"></a>
-            <div class="hotel__description"> <!--Блок с тремя подблоками-->
-              <p class="hotel__name"><a href="#">Villas at Poco Diablo</a></p>
-              <div class="hotel__info">
-                <p class="hotel__type">Апартаменты</p>
-                <p class="hotel__price">От 2000 Р.</p>
-              </div>            
-              <div class="hotel__info">
-                <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
-                <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
-              </div>
+        <article class="hotels__item hotel">
+          <h3 class="visually-hidden">Третий результат</h3>
+          <a class="hotel__image" href="#" aria-label="Фото отеля">
+            <img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото отеля">
+          </a>
+          <div class="hotel__description">
+            <p class="hotel__name"><a href="#">Villas at Poco Diablo</a></p>
+            <div class="hotel__info">
+              <p class="hotel__type">Апартаменты</p>
+              <p class="hotel__price">От 2000 Р.</p>
+            </div>            
+            <div class="hotel__info">
+              <a class="hotel__btn hotel__btn--details" href="#">Подробнее</a>
+              <a class="hotel__btn hotel__btn--reserve" href="#">Забронировать</a>
             </div>
-            <div class="hotel__evaluate"> <!--Блок с двумя подблоками-->
-              <div class="hotel__stars hotel__stars--third" aria-label="Две звезды"></div>
-              <p class="hotel__rating">Рейтинг: <span>9,2</span></p>
-            </div>
+          </div>
+          <div class="hotel__evaluate">
+            <div class="hotel__stars hotel__stars--third" aria-label="Две звезды"></div>
+            <p class="hotel__rating">Рейтинг: <span>9,2</span></p>
+          </div>
         </article>
       </section>
     </main>
-
     <footer class="footer">
       <div class="visit">
         <a class="visit__link" href="#">#Visitsedona</a>
       </div>
       <ul class="social">
-        <li class="social__button social__button--twitter"><a href="#"><span class="visually-hidden">Twitter</span>
-          <svg x="0px" y="0px"
-          width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-       
-       <g id="W6EeEF_1_">
-         <g>
-           <path opacity="1" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
-             c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
-             c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
-             c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103
-             C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
-             c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
-         </g>
-       </g>
-       </svg>
-      </a></li>
-        <li class="social__button social__button--facebook"><a href="#"><span class="visually-hidden">Facebook</span>
-          
-          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
-          <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
-          </svg>
-          </a></li>
-        <li class="social__button social__button--youtube"><a href="#"><span class="visually-hidden">YouTube</span>
-          
-          <svg  x="0px" y="0px"
-             width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-          <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
-             M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
-          </svg>
-          </a></li>
+        <li class="social__button social__button--twitter">
+          <a href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg x="0px" y="0px" width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
+              <path opacity="1" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
+                c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
+                c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
+                c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103
+                C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
+                c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__button social__button--facebook">
+          <a href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg  x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+              <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__button social__button--youtube">
+          <a href="#">
+            <span class="visually-hidden">YouTube</span>
+            <svg  x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
+              <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
+              M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
+            </svg>
+          </a>
+        </li>
       </ul>
       <p class="copyright">
         <span>Website by</span>
@@ -202,6 +222,5 @@
       </p>
     </footer>
   </div>
-  
   </body>
 </html>
