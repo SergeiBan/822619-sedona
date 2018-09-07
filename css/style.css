@@ -1200,6 +1200,7 @@ a.active:hover {
   background-position: -1px 2px;
   background-repeat: no-repeat;
   background-size: 22px 24px;
+  cursor: pointer;
 }
 
 .legend {
