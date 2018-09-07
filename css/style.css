@@ -540,7 +540,7 @@ input[type=text]::-ms-clear {
 
 .search__number button:focus {
   border: #66afe9;
-  box-shadow: inset 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 0 5px #0000ff;
 }
 
 .search__form input[type="number"] {
@@ -639,17 +639,14 @@ input[type=text]::-ms-clear {
 }
 
 .hotel-choice__checkbox:focus + label {
-  text-shadow: 25px 0px 8px rgb(9, 19, 31);
+  box-shadow: inset 0 0 5px #0000ff;
 }
-
 
 .hotel-choice__specs label {
   position: relative;
   padding-left: 40px;
   min-height: 23px;
-  width: 100px;
   cursor: pointer;
-  
 }
 
 .hotel-choice__specs label::before {
@@ -1209,7 +1206,7 @@ a.active:hover {
 
 .hotel-choice__list li {
   margin-bottom: 23px;
-  height: 23px;
+  display: flex;
 }
 
 .hotel-choice__list li:last-of-type {

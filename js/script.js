@@ -42,11 +42,11 @@ popup.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
-      if (isStorageSupport) {
-      localStorage.setItem("arrival", arrival.value);
-      localStorage.setItem("leaving", leaving.value);
-      localStorage.setItem("adults", adults.value);
-      localStorage.setItem("children", children.value);
+    if (isStorageSupport) {
+    localStorage.setItem("arrival", arrival.value);
+    localStorage.setItem("leaving", leaving.value);
+    localStorage.setItem("adults", adults.value);
+    localStorage.setItem("children", children.value);
     }
   }
 });
@@ -57,10 +57,8 @@ function initMap() {
     center: {lat: 34.925382, lng: -111.758469},
     disableDefaultUI: true
   });
-
   var marker = new google.maps.Marker({
     position: {lat: 34.925382, lng: -111.758469},
     map: map
   });
 }
-
