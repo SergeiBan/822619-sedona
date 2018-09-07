@@ -607,14 +607,6 @@ input[type=text]::-ms-clear {
   position: relative;
 }
 
-.map__interactive {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1200px;
-  height: 593px;
-}
-
 .map img {
   max-width: 100%;
   height: auto;
