@@ -1357,3 +1357,9 @@ a.active:hover {
   border: 0;
   padding: 0;
 }
+
+.map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
